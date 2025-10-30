@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figure Display - Manlian News</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 头部导航 -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-mask"></i>
+        <span>Manlian News</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Homepage</a></li>
+        <li><a href="figures.html" class="nav-link active">Figure display</a></li>
+        <li><a href="community.html" class="nav-link">User Community</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 主体内容 -->
+  <main class="container">
+    <h1 style="margin: 30px 0; color: var(--primary);">Display of new figure products</h1>
+    
+    <!-- 搜索与筛选区 -->
+    <section class="filter-section">
+      <div class="search-box">
+        <input type="text" class="search-input" id="figure-search" placeholder="Search for figurines (e.g.: Attack on Titan, Eren, Bandai)...">
+        <button class="search-btn" id="figure-search-btn">
+          <i class="fas fa-search"></i> search
+        </button>
+      </div>
+      
+      <div class="filters">
+        <div class="filter-group">
+          <label class="filter-label">Anime series</label>
+          <select class="filter-select" id="anime-series">
+            <option value="all">All series</option>
+            <option value="Attack on Titan">Attack on Titan</option>
+            <option value="SPY×FAMILY">SPY×FAMILY</option>
+            <option value="Demon Slayer">Demon Slayer</option>
+            <option value="others">others</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label class="filter-label">Price range</label>
+          <select class="filter-select" id="price-range">
+            <option value="all">All prices</option>
+            <option value="0-500">Below 500 yuan</option>
+            <option value="500-1000">500-1000yuan</option>
+            <option value="1000-2000">1000-2000yuan</option>
+            <option value="2000+">above 2000 yuan</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label class="filter-label">Size specifications</label>
+          <select class="filter-select" id="size-spec">
+            <option value="all">All sizes</option>
+            <option value="small">small（<10cm）</option>
+            <option value="medium">Medium size (10-20cm)</option>
+            <option value="large">Demon Slayer</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- 手办列表 -->
+    <section>
+      <div class="card-grid" id="figure-list">
+        <!-- 手办1 -->
+        <div class="card figure-item" data-series="attack-on-titan" data-price="399" data-size="large">
+          <img src="public\images\publicimagesfigure-attack-on-titan.jpg" alt="attack-on-titan" class="card-img">
+          <div class="card-content">
+            <h3 class="card-title">Attack on Titan</h3>
+            <div class="card-meta">
+              <span><i class="far fa-calendar"></i> 2026-03</span>
+              <span><i class="fas fa-yen-sign"></i> 399yuan</span>
+              <span><i class="fas fa-industry"></i> Bandai</span>
+              <span><i class="fas fa-ruler"></i> 23cm</span>
+            </div>
+            <p class="card-desc">1/7 scale painted, with articulating joint design, comes with battle effect accessories, scheduled to be released in March 2026.</p>
+          </div>
+        </div>
+        
+        <!-- 手办2 -->
+        <div class="card figure-item" data-series="SPY×FAMILY" data-price="299" data-size="small">
+          <img src="public/images/figure-spy-x-family.jpg" alt="SPY×FAMILY" class="card-img">
+          <div class="card-content">
+            <h3 class="card-title">SPY×FAMILY </h3>
+            <div class="card-meta">
+              <span><i class="far fa-calendar"></i> 2025-10-02</span>
+              <span><i class="fas fa-yen-sign"></i> 299yuan</span>
+              <span><i class="fas fa-industry"></i> GSC</span>
+              <span><i class="fas fa-ruler"></i> 10cm</span>
+            </div>
+            <p class="card-desc">Chibi style, with multiple replaceable expression parts and action poses, height approximately 10cm, available for immediate purchase.</p>
+          </div>
+        </div>
+        
+        <!-- 手办3 -->
+        <div class="card figure-item" data-series="Demon Slayer" data-price="299" data-size="medium">
+          <img src="public/images/figure-demon-slayer.jpg" alt="Demon Slayer" class="card-img">
+          <div class="card-content">
+            <h3 class="card-title">Demon Slayer</h3>
+            <div class="card-meta">
+              <span><i class="far fa-calendar"></i> 2025-10-10</span>
+              <span><i class="fas fa-yen-sign"></i> 299yuan</span>
+              <span><i class="fas fa-industry"></i> Aniplex</span>
+              <span><i class="fas fa-ruler"></i> 25cm</span>
+            </div>
+            <p class="card-desc">1/6 Scale Beautiful Girl Series, with exquisite clothing details, limited release, pre-orders are now being accepted.</p>
+          </div>
+        </div>
+        
+        <!-- 手办4 -->
+        <div class="card figure-item" data-series="else" data-price="200" data-size="large">
+          <img src="public/images/evangelion-sony.jpg" alt="EVA" class="card-img">
+          <div class="card-content">
+            <h3 class="card-title">Neon Genesis Evangelion</h3>
+            <div class="card-meta">
+              <span><i class="far fa-calendar"></i> 2025-09-20</span>
+              <span><i class="fas fa-yen-sign"></i> 200yuan</span>
+              <span><i class="fas fa-industry"></i> HobbyMax</span>
+              <span><i class="fas fa-ruler"></i> 18cm</span>
+            </div>
+            <p class="card-desc">Including a luminous base and a variety of replacement accessories.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <div class="footer-logo">Manlian News</div>
+        <p>The latest anime collaborations and figure news, all in Manlian News</p>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+          <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin-bottom: 15px;">Quick Links</h4>
+        <ul style="list-style: none;">
+          <li><a href="index.html" style="color: #ddd; text-decoration: none;">Homepage</a></li>
+          <li><a href="figures.html" style="color: #ddd; text-decoration: none;">Figure display</a></li>
+          <li><a href="community.html" style="color: #ddd; text-decoration: none;">User community</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-copyright">
+      Anime news platform
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

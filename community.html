@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Community - Manlian News</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- 头部导航 -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-mask"></i>
+        <span>Manlian News</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Homepage</a></li>
+        <li><a href="figures.html" class="nav-link">Figure display</a></li>
+        <li><a href="community.html" class="nav-link active">User Community</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 主体内容 -->
+  <main class="container">
+    <h1 style="margin: 30px 0; color: var(--primary);">User Community</h1>
+    
+    <!-- 留言发布区 -->
+    <section class="community-section">
+      <h2 class="section-title">
+        <i class="fas fa-pen"></i> Share your thoughts
+      </h2>
+      <div class="post-form">
+        <textarea class="post-textarea" id="comment-input" placeholder="Share the anime collaborations, figure information you've discovered, or express your opinions..."></textarea>
+        <div class="post-actions">
+          <button class="search-btn" id="post-comment">
+            <i class="fas fa-paper-plane"></i> Post a message
+          </button>
+        </div>
+      </div>
+      
+      <!-- 留言列表 -->
+      <div>
+        <h2 class="section-title">
+          <i class="fas fa-comments"></i> Latest discussion
+        </h2>
+        <div id="comments-container">
+          <!-- 示例留言1 -->
+          <div class="comment">
+            <div class="comment-header">
+              <div class="comment-author">Anime enthusiast</div>
+              <div class="comment-time">2025-10-20 15:30</div>
+            </div>
+            <div class="comment-content">
+              The Spy × Family merchandise from KFC is so cute! I've collected all the stickers, and the hidden item is Twilight's badge. I'm super happy~
+            </div>
+            <div class="comment-actions">
+              <div class="comment-action like-btn" data-id="1">
+                <i class="far fa-heart"></i> Likes (332)
+              </div>
+              <div class="comment-action collect-btn">
+                <i class="far fa-bookmark"></i> Favorite
+              </div>
+            </div>
+          </div>
+          
+          <!-- 示例留言2 -->
+          <div class="comment">
+            <div class="comment-header">
+              <div class="comment-author">Figure collector</div>
+              <div class="comment-time">2025-10-19 10:15</div>
+            </div>
+            <div class="comment-content">
+              The newly released Eren figure by Bandai has exquisite craftsmanship and good joint mobility. It's just a bit expensive; it's recommended to buy it during a promotion.
+            </div>
+            <div class="comment-actions">
+              <div class="comment-action like-btn" data-id="2">
+                <i class="far fa-heart"></i> Likes (236) 
+              </div>
+              <div class="comment-action collect-btn">
+                <i class="far fa-bookmark"></i> Favorite
+              </div>
+            </div>
+          </div>
+          
+          <!-- 示例留言3 -->
+          <div class="comment">
+            <div class="comment-header">
+              <div class="comment-author">coffee lover</div>
+              <div class="comment-time">2025-10-18 09:45</div>
+            </div>
+            <div class="comment-content">
+             The taste of the co-branded blueberry latte by Luckin Coffee and Honor of Kings is just average, but the cup sleeve design is very exquisite and worth collecting!
+            </div>
+            <div class="comment-actions">
+              <div class="comment-action like-btn" data-id="3">
+                <i class="far fa-heart"></i> Likes (145)
+              </div>
+              <div class="comment-action collect-btn">
+                <i class="far fa-bookmark"></i> Favorite
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <div class="footer-logo">Manlian News</div>
+        <p>The latest anime collaborations and figure news, all in Manlian News</p>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fab fa-weibo"></i></a></li>
+          <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin-bottom: 15px;">Quick Links</h4>
+        <ul style="list-style: none;">
+          <li><a href="index.html" style="color: #ddd; text-decoration: none;">Homepage</a></li>
+          <li><a href="figures.html" style="color: #ddd; text-decoration: none;">Figure display</a></li>
+          <li><a href="community.html" style="color: #ddd; text-decoration: none;">User community</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-copyright">
+     Anime News Platform
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
